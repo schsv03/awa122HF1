@@ -23,7 +23,7 @@
    </general_attributes>
    <scripts>
       <row>
-         <process>:print "Initial Event"</process>
+         <process>:print "Initial Event 1"</process>
       </row>
    </scripts>
    <event_attributes>
