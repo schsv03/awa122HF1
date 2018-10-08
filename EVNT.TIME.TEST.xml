@@ -23,7 +23,7 @@
    </general_attributes>
    <scripts>
       <row>
-         <process>:p test version 1</process>
+         <process>:p test version 2</process>
       </row>
    </scripts>
    <event_attributes>
