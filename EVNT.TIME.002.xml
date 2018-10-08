@@ -10,7 +10,8 @@
          <minimum_ae_version>11.2</minimum_ae_version>
          <auto_deactivation>A</auto_deactivation>
          <child_flags>00000000000000000000000000000000</child_flags>
-         <last_runtimes>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</last_runtimes>
+         <ert>423</ert>
+         <last_runtimes>pwEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</last_runtimes>
          <max_parallel_action>1</max_parallel_action>
          <mrt_time>000000</mrt_time>
          <name>EVNT.TIME.002</name>
@@ -23,7 +24,7 @@
    </general_attributes>
    <scripts>
       <row>
-         <process>:print "Initial Event2"</process>
+         <process>:print "Initial Event3"</process>
       </row>
    </scripts>
    <event_attributes>
