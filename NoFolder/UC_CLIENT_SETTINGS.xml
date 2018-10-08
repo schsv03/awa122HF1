@@ -15,40 +15,40 @@
          <type>VARA</type>
          <sub_type>STATIC</sub_type>
          <description>UC4 system settings per client</description>
-         <versioning_id>-1673351500</versioning_id>
+         <versioning_id>-1673351501</versioning_id>
       </row>
    </general_attributes>
    <static_values>
       <row>
-         <client>600</client>
+         <client>500</client>
          <value1>git@github.com:schsv03/awa122HF1.git</value1>
          <validity_range>FREI</validity_range>
          <key>REMOTE_REPOSITORY_URL</key>
       </row>
       <row>
-         <client>600</client>
+         <client>500</client>
          <value1>c:\Users\Automic\.ssh</value1>
          <validity_range>FREI</validity_range>
          <key>REPOSITORY_SSH_DIR</key>
       </row>
       <row>
-         <client>600</client>
+         <client>500</client>
          <value1>Y</value1>
          <validity_range>FREI</validity_range>
          <key>SEARCH_SCRIPT_FOR_USAGE</key>
       </row>
       <row>
-         <client>600</client>
+         <client>500</client>
          <validity_range>FREI</validity_range>
          <key>SMTP_FROM_ADDR</key>
       </row>
       <row>
-         <client>600</client>
+         <client>500</client>
          <validity_range>FREI</validity_range>
          <key>SMTP_SERVER</key>
       </row>
       <row>
-         <client>600</client>
+         <client>500</client>
          <value1>Y</value1>
          <validity_range>FREI</validity_range>
          <key>VERSION_MANAGEMENT</key>

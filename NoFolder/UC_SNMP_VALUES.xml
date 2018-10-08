@@ -14,13 +14,13 @@
          <type>VARA</type>
          <sub_type>STATIC</sub_type>
          <description>Current SNMP values</description>
-         <versioning_id>-476257913</versioning_id>
+         <versioning_id>-476257914</versioning_id>
       </row>
    </general_attributes>
    <static_values>
       <row>
-         <client>600</client>
-         <value1>+0000000000000003.0000000000000000</value1>
+         <client>500</client>
+         <value1>+0000000000000002.0000000000000000</value1>
          <validity_range>FREI</validity_range>
          <key>USER_COUNT</key>
       </row>

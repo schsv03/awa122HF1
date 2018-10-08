@@ -10,7 +10,7 @@
          <name>UC_VERSIONCONTROL_EXCLUDE</name>
          <type>VARA</type>
          <sub_type>STATIC</sub_type>
-         <versioning_id>-282128855</versioning_id>
+         <versioning_id>-282128856</versioning_id>
       </row>
    </general_attributes>
    <variable_definitions>
@@ -24,12 +24,12 @@
    </variable_definitions>
    <static_values>
       <row>
-         <client>600</client>
+         <client>500</client>
          <validity_range>FREI</validity_range>
          <key>UC_USER_HOST</key>
       </row>
       <row>
-         <client>600</client>
+         <client>500</client>
          <validity_range>FREI</validity_range>
          <key>UC_USER_LANGUAGE</key>
       </row>

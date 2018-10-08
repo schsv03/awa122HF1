@@ -11,9 +11,9 @@
          <child_flags>00000000000000000000000000000000</child_flags>
          <name>CLIENT_QUEUE</name>
          <type>QUEUE</type>
-         <description>Client queue for client 0600</description>
+         <description>Client queue for client 0500</description>
          <priority>200</priority>
-         <versioning_id>1558172448</versioning_id>
+         <versioning_id>1558172447</versioning_id>
       </row>
    </general_attributes>
    <queue_attributes>
