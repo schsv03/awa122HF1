@@ -20,7 +20,7 @@
    <static_values>
       <row>
          <client>600</client>
-         <value1>+0000000000000002.0000000000000000</value1>
+         <value1>+0000000000000003.0000000000000000</value1>
          <validity_range>FREI</validity_range>
          <key>USER_COUNT</key>
       </row>
