@@ -24,7 +24,7 @@
    </general_attributes>
    <scripts>
       <row>
-         <process>:p test version 3</process>
+         <process>:p test version 4</process>
       </row>
    </scripts>
    <event_attributes>
