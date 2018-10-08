@@ -18,6 +18,7 @@
          <inherit_output_filter>N</inherit_output_filter>
          <queue>CLIENT_QUEUE</queue>
          <sub_type>TT</sub_type>
+         <description>Test Event</description>
          <versioning_id>209225278</versioning_id>
       </row>
    </general_attributes>
