@@ -24,7 +24,7 @@
    </general_attributes>
    <scripts>
       <row>
-         <process>:print "Initial Event3"</process>
+         <process>:print "Initial Event4"</process>
       </row>
    </scripts>
    <event_attributes>
