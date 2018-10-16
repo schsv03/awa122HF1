@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<evnt>
+<scri>
    <metadata>
       <row>
          <version>12.2.0</version>
@@ -10,33 +10,29 @@
          <minimum_ae_version>11.2</minimum_ae_version>
          <auto_deactivation>A</auto_deactivation>
          <child_flags>00000000000000000000000000000000</child_flags>
-         <last_runtimes>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</last_runtimes>
+         <ert>1</ert>
+         <last_runtimes>AQAAAAEAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</last_runtimes>
          <max_parallel_action>1</max_parallel_action>
          <mrt_time>000000</mrt_time>
-         <name>EVNT.TIME.TEST</name>
-         <type>EVNT</type>
+         <name>SCRI.NEW.1</name>
+         <type>SCRI</type>
          <inherit_output_filter>N</inherit_output_filter>
          <queue>CLIENT_QUEUE</queue>
-         <sub_type>TT</sub_type>
-         <description>Test Event</description>
-         <versioning_id>209225278</versioning_id>
+         <versioning_id>602776303</versioning_id>
       </row>
    </general_attributes>
    <scripts>
       <row>
-         <process>:p test version 92</process>
+         <process><![CDATA[:set &VArAa = sys_date(DD-MM-YY)
+:print &VArAa]]></process>
       </row>
    </scripts>
-   <event_attributes>
+   <script_attributes>
       <row>
-         <type>TT</type>
-         <repeat_type>R</repeat_type>
-         <execution_type>S</execution_type>
-         <time_period>0000</time_period>
       </row>
-   </event_attributes>
+   </script_attributes>
    <rollback_definitions>
       <row>
       </row>
    </rollback_definitions>
-</evnt>
+</scri>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<login>
+   <metadata>
+      <row>
+         <version>12.2.0</version>
+      </row>
+   </metadata>
+   <general_attributes>
+      <row>
+         <minimum_ae_version>11.2</minimum_ae_version>
+         <child_flags>00000000000000000000000000000000</child_flags>
+         <last_runtimes>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</last_runtimes>
+         <name>LOGIN.NEW.1</name>
+         <type>LOGIN</type>
+         <versioning_id>-640675866</versioning_id>
+      </row>
+   </general_attributes>
+</login>

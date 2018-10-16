@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dash>
+   <metadata>
+      <row>
+         <version>12.2.0</version>
+      </row>
+   </metadata>
+   <general_attributes>
+      <row>
+         <minimum_ae_version>11.2</minimum_ae_version>
+         <last_runtimes>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</last_runtimes>
+         <name>DASH.NEW.1</name>
+         <type>DASH</type>
+         <versioning_id>39055705</versioning_id>
+      </row>
+   </general_attributes>
+   <documentation>
+      <row>
+         <DASH>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pgo8ZGFzaGJvYXJkIGNvbHM9IjMiIHJvd3M9IjIiPgogICAgPGNvbmZpZ3VyYXRpb25zLz4KPC9kYXNoYm9hcmQ+Cg==</DASH>
+      </row>
+   </documentation>
+   <object_authorizations>
+      <row>
+         <auth_object_id>1021010</auth_object_id>
+         <bitcode>11</bitcode>
+         <line_number>1</line_number>
+      </row>
+   </object_authorizations>
+</dash>

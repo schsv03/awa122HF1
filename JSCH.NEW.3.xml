@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jsch>
+   <metadata>
+      <row>
+         <version>12.2.0</version>
+      </row>
+   </metadata>
+   <general_attributes>
+      <row>
+         <minimum_ae_version>11.2</minimum_ae_version>
+         <auto_deactivation>A</auto_deactivation>
+         <child_flags>00000000000000000000000000000000</child_flags>
+         <ert>6</ert>
+         <ert_trend>1</ert_trend>
+         <workflow_children>2</workflow_children>
+         <last_runtimes>EQAAABwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</last_runtimes>
+         <max_parallel>1</max_parallel>
+         <max_parallel_action>2</max_parallel_action>
+         <mrt_time>000000</mrt_time>
+         <name>JSCH.NEW.3</name>
+         <type>JSCH</type>
+         <inherit_output_filter>N</inherit_output_filter>
+         <queue>CLIENT_QUEUE</queue>
+         <versioning_id>447112414</versioning_id>
+      </row>
+   </general_attributes>
+   <schedule_attributes>
+      <row>
+         <period>1</period>
+         <start_time>2000-01-01 00:00:00.0</start_time>
+      </row>
+   </schedule_attributes>
+   <workflow_definitions>
+      <row>
+         <active>1</active>
+         <connected_to_end>1</connected_to_end>
+         <earliest_start_time>001145</earliest_start_time>
+         <line_number>1</line_number>
+         <mrt_time>000000</mrt_time>
+         <object_name>EVNT.TIME.TEST</object_name>
+         <object_type>EVNT</object_type>
+      </row>
+      <row>
+         <active>1</active>
+         <connected_to_end>1</connected_to_end>
+         <earliest_start_time>000000</earliest_start_time>
+         <line_number>2</line_number>
+         <mrt_time>000000</mrt_time>
+         <object_name>JOBS.UNIX.NEW.2</object_name>
+         <object_type>JOBS</object_type>
+      </row>
+   </workflow_definitions>
+</jsch>

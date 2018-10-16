@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<call>
+   <metadata>
+      <row>
+         <version>12.2.0</version>
+      </row>
+   </metadata>
+   <general_attributes>
+      <row>
+         <minimum_ae_version>11.2</minimum_ae_version>
+         <auto_deactivation>A</auto_deactivation>
+         <child_flags>00000000000000000000000000000000</child_flags>
+         <ert>222</ert>
+         <last_runtimes>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</last_runtimes>
+         <max_parallel_action>1</max_parallel_action>
+         <mrt_time>000000</mrt_time>
+         <name>CALL.ALARM.NEW.1</name>
+         <type>CALL</type>
+         <inherit_output_filter>N</inherit_output_filter>
+         <queue>CLIENT_QUEUE</queue>
+         <sub_type>2</sub_type>
+         <versioning_id>1403606429</versioning_id>
+      </row>
+   </general_attributes>
+   <scripts>
+      <row>
+         <process><![CDATA[!Get Operator
+:set &userid# = SYS_USER_NAME
+:set &dep# = SYS_USER_DEP
+:ADD_ATT OPERATOR, '&userid#/&dep#'
+!
+!Get Script
+:read &UC_CAUSE_NAME,,
+:read &UC_CAUSE_NR,,
+:read &UC_CAUSE_STATE,,
+:read &UC_CAUSE_RETCODE,,
+!
+:set &nl# = UC_CRLF
+!
+:set &parentname# = SYS_ACT_PARENT_NAME('ACT')
+:set &parentnr# = SYS_ACT_PARENT_NR('ACT')
+:set &parenttyp# = SYS_ACT_PARENT_TYP('ACT')
+:set &system# = GET_UC_SYSTEM_NAME
+:set &client# = SYS_ACT_CLIENT
+:set &date# = SYS_DATE_PHYSICAL()
+:set &time# = SYS_TIME_PHYSICAL("HH:MM:SS")
+:set &lang# = SYS_USER_LANGUAGE
+:set &statustext# = get_msg_txt(&UC_CAUSE_STATE,'')
+!
+:if &lang# = 'E'
+:  put_att SUBJECT = "Alarm:'&UC_CAUSE_NAME' RunID:'&UC_CAUSE_NR' Client:'&client#'"
+:  set &date# = conv_date(&date#,"MM/DD/YYYY")
+:  PUT_ATT CALL_TEXT = "An error occurred! &nl# &nl#"
+:  put_att_append CALL_TEXT = "UC4 System: &system# &nl#"
+:  put_att_append CALL_TEXT = "Client:     &client# &nl#"
+:  put_att_append CALL_TEXT = "Object:     &UC_CAUSE_NAME &nl#"
+:  put_att_append CALL_TEXT = "Run#:       &UC_CAUSE_NR &nl#"
+:  put_att_append CALL_TEXT = "State Text: &statustext# (&UC_CAUSE_STATE) &nl#"
+:  put_att_append CALL_TEXT = "Retcode:   &UC_CAUSE_RETCODE &nl#"
+:  put_att_append CALL_TEXT = "Date/Time:  &date# &time# &nl# &nl#"
+:  put_att_append CALL_TEXT = "Parent of this object (if available):  &nl# &nl#"
+:  put_att_append CALL_TEXT = "Parent:     &parentname# &nl#"
+:  put_att_append CALL_TEXT = "Type:       &parenttyp# &nl#"
+:  put_att_append CALL_TEXT = "Run#:       &parentnr# &nl#"
+:endif
+:if &lang# = 'D'
+:  put_att SUBJECT = "Alarm:'&UC_CAUSE_NAME' RunID:'&UC_CAUSE_NR' Mandant:'&client#'"
+:  set &date# = conv_date(&date#,"DD.MM.YYYY")
+:  PUT_ATT CALL_TEXT = "Ein Fehler ist aufgetreten! &nl# &nl#"
+:  put_att_append CALL_TEXT = "UC4 System:   &system# &nl#"
+:  put_att_append CALL_TEXT = "Mandant:      &client# &nl#"
+:  put_att_append CALL_TEXT = "Objekt:       &UC_CAUSE_NAME &nl#"
+:  put_att_append CALL_TEXT = "Run#:         &UC_CAUSE_NR &nl#"
+:  put_att_append CALL_TEXT = "Status:       &statustext# (&UC_CAUSE_STATE) &nl#"
+:  put_att_append CALL_TEXT = "Retcode:     &UC_CAUSE_RETCODE &nl#"
+:  put_att_append CALL_TEXT = "Datum/Zeit:   &date# &time# &nl# &nl#"
+:  put_att_append CALL_TEXT = "Parent dieses Objektes (wenn vorhanden):  &nl# &nl#"
+:  put_att_append CALL_TEXT = "Parent:       &parentname# &nl#"
+:  put_att_append CALL_TEXT = "Typ:          &parenttyp# &nl#"
+:  put_att_append CALL_TEXT = "Run#:         &parentnr# &nl#"
+:endif
+:if &lang# = 'F'
+:  put_att SUBJECT = "Alarm:'&UC_CAUSE_NAME' RunID:'&UC_CAUSE_NR' Client:'&client#'"
+:  set &date# = conv_date(&date#,"MM/DD/YYYY")
+:  PUT_ATT CALL_TEXT = "Une erreur s'est produite! &nl# &nl#"
+:  put_att_append CALL_TEXT = "UC4 System: &system# &nl#"
+:  put_att_append CALL_TEXT = "Client:     &client# &nl#"
+:  put_att_append CALL_TEXT = "Objet:      &UC_CAUSE_NAME &nl#"
+:  put_att_append CALL_TEXT = "Run#:       &UC_CAUSE_NR &nl#"
+:  put_att_append CALL_TEXT = "Statut:     &statustext# (&UC_CAUSE_STATE) &nl#"
+:  put_att_append CALL_TEXT = "Retcode:   &UC_CAUSE_RETCODE &nl#"
+:  put_att_append CALL_TEXT = "Date/Heure: &date# &time# &nl# &nl#"
+:  put_att_append CALL_TEXT = "Parent de cet objet (si disponible):  &nl# &nl#"
+:  put_att_append CALL_TEXT = "Parent:     &parentname# &nl#"
+:  put_att_append CALL_TEXT = "Type:       &parenttyp# &nl#"
+:  put_att_append CALL_TEXT = "Run#:       &parentnr# &nl#"
+:endif]]></process>
+      </row>
+   </scripts>
+   <notification_attributes>
+      <row>
+         <attachments_run_id>&amp;UC_CAUSE_NR</attachments_run_id>
+         <auto_quit>J</auto_quit>
+         <priority>1</priority>
+         <subject><![CDATA[<Will be replaced by Process.>]]></subject>
+         <content><![CDATA[<Will be replaced by Process.>]]></content>
+         <type>2</type>
+      </row>
+   </notification_attributes>
+   <rollback_definitions>
+      <row>
+      </row>
+   </rollback_definitions>
+</call>
